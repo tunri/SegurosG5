@@ -1,4 +1,4 @@
-package com.segurosx.projectx.models;
+package com.segurosx.models;
 
 public class Poliza {
     
