@@ -2,13 +2,13 @@ package com.segurosx.models;
 
 public class Poliza {
 
-    private Integer number;
+    private Integer numero;
 
-    public Integer getNumber() {
-        return number;
+    public Integer getNumero() {
+        return numero;
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setNumero(Integer numero) {
+        this.numero = numero;
     }
 }

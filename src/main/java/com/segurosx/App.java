@@ -1,6 +1,7 @@
 package com.segurosx;
 
-import com.segurosx.models.Seguro;
+import com.segurosx.models.Cliente;
+import com.segurosx.models.SeguroVehicular;
 
 /**
  * Hello world!
@@ -11,8 +12,10 @@ public class App
     public static void main( String[] args )
     {
 
-        Seguro seguroDeJuanPerez = new Seguro();
+        Cliente cliente = new Cliente("Juan Perez");
+        SeguroVehicular seguro = new SeguroVehicular("Toyota","Yaris");
+        cliente.setCompraSeguroVehicular(seguro);
+        cliente.getListaSeguroCliente();
 
-        System.out.println(seguroDeJuanPerez.getDetalleSeguro());
-    }
+   }
 }

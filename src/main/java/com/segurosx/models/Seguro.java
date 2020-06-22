@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class Seguro {
 
-    private Integer number;
+    private Integer numero;
     
     private Certificado certificado;
 
     private Poliza poliza;
 
     public Seguro() {
-        this.number = new Integer(new Random().nextInt());
+        this.numero = new Integer(new Random().nextInt());
     }
 
     public Certificado getCertificado() {
@@ -32,16 +32,17 @@ public class Seguro {
 
     public String getDetalleSeguro()    {
 
-        return "Seguro: " + this.number; 
-               //"Poliza: " + this.getPoliza().getNumber() + " - " +
-               //"Certificado: " + this.getCertificado().getNumber();
+        return "Seguro: " + this.numero; 
+               //"Poliza: " + this.getPoliza().getNumero() + " - " +
+               //"Certificado: " + this.getCertificado().getNumero();
     }
 
-    public Integer getNumber() {
-        return number;
+    public Integer getNumero() {
+        return numero;
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setNumero(Integer numero) {
+        this.numero = numero;
     }
+
 }
