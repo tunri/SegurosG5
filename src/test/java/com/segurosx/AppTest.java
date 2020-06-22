@@ -1,4 +1,4 @@
-package com.segurosx.projectx;
+package com.segurosx;
 
 import static org.junit.Assert.assertTrue;
 

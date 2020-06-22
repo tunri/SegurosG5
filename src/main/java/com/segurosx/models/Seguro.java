@@ -32,7 +32,7 @@ public class Seguro {
 
     public String getDetalleSeguro()    {
 
-        return "Seguro: " + this.numero; 
+        return "Numero: " + this.numero; 
                //"Poliza: " + this.getPoliza().getNumero() + " - " +
                //"Certificado: " + this.getCertificado().getNumero();
     }

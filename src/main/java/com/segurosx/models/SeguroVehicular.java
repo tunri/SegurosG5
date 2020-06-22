@@ -38,4 +38,9 @@ public class SeguroVehicular {
     public void setNumber(Integer numero) {
         this.numero = numero;
     }
+
+    public String getDetalleSeguro()    {
+
+        return "Seg. Vehicular Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo;
+    }    
 }

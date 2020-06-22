@@ -3,7 +3,7 @@ package com.segurosx.models;
 public class Cliente {
     
     private String nombre;
-    private Integer numeroSeguroVehicular;
+    private SeguroVehicular seguroVehicular;
 
     public Cliente(String nombre)   {
 
@@ -12,11 +12,11 @@ public class Cliente {
 
     public void setCompraSeguroVehicular(SeguroVehicular seguroVehicular) {
 
-        this.numeroSeguroVehicular = seguroVehicular.getNumero();
+        this.seguroVehicular = seguroVehicular;
     }
 
     public void getListaSeguroCliente()    {
 
-        System.out.println("Nombre: " + this.nombre + " - seguro numero: " + this.numeroSeguroVehicular);
+        System.out.println("Nombre: " + this.nombre + " - Seguro: " + this.seguroVehicular.getDetalleSeguro());
     }
 }
