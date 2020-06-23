@@ -1,7 +1,6 @@
 package com.segurosx;
 
 import com.segurosx.models.Cliente;
-import com.segurosx.models.SeguroTarjeta;
 import com.segurosx.models.SeguroVehicular;
 
 /**
