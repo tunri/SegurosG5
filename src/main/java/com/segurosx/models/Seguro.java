@@ -4,7 +4,7 @@ import java.util.Random;
 
 public abstract class Seguro {
 
-    private Integer numero;
+    protected Integer numero;
     
     private Certificado certificado;
 

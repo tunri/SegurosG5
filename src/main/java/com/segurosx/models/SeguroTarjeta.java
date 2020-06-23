@@ -1,9 +1,7 @@
 package com.segurosx.models;
 
 public class SeguroTarjeta extends Seguro {
-
-    private Integer numero;
-    
+  
     private String bancoTarjeta;
 
     private String nivelRiesgo = "NINGUNO";
@@ -26,14 +24,6 @@ public class SeguroTarjeta extends Seguro {
 
     public String getNivelRiesgo()  {
         return this.nivelRiesgo;
-    }
-
-    public Integer getNumero() {
-        return numero;
-    }
-
-    public void setNumero(Integer numero) {
-        this.numero = numero;
     }
 
     @Override
