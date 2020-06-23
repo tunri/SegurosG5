@@ -2,9 +2,6 @@ package com.segurosx.models;
 
 public class SeguroTarjeta extends Seguro {
   
-    private String bancoTarjeta;
-
-    private String nivelRiesgo = "NINGUNO";
 
     public SeguroTarjeta(String bancoTarjeta)    {
 
@@ -12,6 +9,7 @@ public class SeguroTarjeta extends Seguro {
         this.bancoTarjeta = bancoTarjeta;
     }
 
+    @Override
     public void cacularRiesgo()   {
 
         if (this.bancoTarjeta.equals("AZTECA")) {
@@ -20,10 +18,6 @@ public class SeguroTarjeta extends Seguro {
         else {
             this.nivelRiesgo = "BAJO";
         } 
-    }
-
-    public String getNivelRiesgo()  {
-        return this.nivelRiesgo;
     }
 
     @Override

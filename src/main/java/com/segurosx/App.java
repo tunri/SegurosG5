@@ -4,7 +4,7 @@ import com.segurosx.models.Cliente;
 import com.segurosx.models.SeguroVehicular;
 
 /**
- * Hello world!
+ * HRCS
  *
  */
 public class App 

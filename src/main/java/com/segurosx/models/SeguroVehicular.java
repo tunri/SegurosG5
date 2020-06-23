@@ -1,11 +1,8 @@
 package com.segurosx.models;
 
 public class SeguroVehicular extends Seguro {
-  
-    private String marca;
-    private String modelo;
-    private String nivelRiesgo = "NINGUNO";
 
+    
     public SeguroVehicular(String marca, String modelo)    {
 
         super();
@@ -13,6 +10,7 @@ public class SeguroVehicular extends Seguro {
         this.modelo = modelo;
     }
 
+    @Override
     public void cacularRiesgo()   {
 
         if (this.marca.equals("Toyota") && this.modelo.equals("Yaris")) {
@@ -23,10 +21,7 @@ public class SeguroVehicular extends Seguro {
         } 
     }
 
-    public String getNivelRiesgo()  {
-        return this.nivelRiesgo;
-    }
-
+    @Override
     public String getDetalleSeguro()    {
 
         return "Seg. Vehicular Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo;
