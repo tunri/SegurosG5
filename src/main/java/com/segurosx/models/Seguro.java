@@ -2,7 +2,7 @@ package com.segurosx.models;
 
 import java.util.Random;
 
-public class Seguro {
+public abstract class Seguro {
 
     private Integer numero;
     
@@ -30,13 +30,6 @@ public class Seguro {
         this.poliza = poliza;
     }
 
-    public String getDetalleSeguro()    {
-
-        return "Numero: " + this.numero; 
-               //"Poliza: " + this.getPoliza().getNumero() + " - " +
-               //"Certificado: " + this.getCertificado().getNumero();
-    }
-
     public Integer getNumero() {
         return numero;
     }
@@ -44,5 +37,9 @@ public class Seguro {
     public void setNumero(Integer numero) {
         this.numero = numero;
     }
+
+    public abstract String getDetalleSeguro();
+
+    public abstract void cacularRiesgo();
 
 }

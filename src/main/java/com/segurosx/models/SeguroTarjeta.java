@@ -1,6 +1,6 @@
 package com.segurosx.models;
 
-public class SeguroTarjeta {
+public class SeguroTarjeta extends Seguro {
 
     private Integer numero;
     
@@ -10,6 +10,7 @@ public class SeguroTarjeta {
 
     public SeguroTarjeta(String bancoTarjeta)    {
 
+        super();
         this.bancoTarjeta = bancoTarjeta;
     }
 
@@ -33,5 +34,11 @@ public class SeguroTarjeta {
 
     public void setNumero(Integer numero) {
         this.numero = numero;
+    }
+
+    @Override
+    public String getDetalleSeguro() {
+        
+        return "Seg. Tarjeta Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo;
     }
 }

@@ -1,8 +1,6 @@
 package com.segurosx.models;
 
-import java.util.Random;
-
-public class SeguroVehicular {
+public class SeguroVehicular extends Seguro {
 
     private Integer numero;
     
@@ -12,7 +10,7 @@ public class SeguroVehicular {
 
     public SeguroVehicular(String marca, String modelo)    {
 
-        this.numero = new Integer(new Random().nextInt()); 
+        super();
         this.marca = marca;
         this.modelo = modelo;
     }
