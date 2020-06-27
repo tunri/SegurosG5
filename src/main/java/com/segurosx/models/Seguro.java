@@ -14,6 +14,8 @@ public abstract class Seguro {
     protected String bancoTarjeta;
     protected String marca;
     protected String modelo;
+    protected Integer anios;
+    protected Integer valorComercial;
 
     public Seguro() {
         this.numero = new Integer(new Random().nextInt());
