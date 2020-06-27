@@ -3,7 +3,7 @@ package com.segurosx.models;
 public class SeguroVehicular extends Seguro implements ISeguroVehicular {
 
     
-  public SeguroVehicular(final String marca, final String modelo) {
+  public SeguroVehicular(final Integer anio, final Integer valorComercial, final String marca, final String modelo) {
 
       super();
       this.marca = marca;
@@ -35,10 +35,7 @@ public class SeguroVehicular extends Seguro implements ISeguroVehicular {
 	@Override
   public void distribucionMensualidadPrima() {
     System.out.println("calculando la distribución en 12 meses...");
-    return this.getPrima();
-    /*
-    HOT FIX
-    Distribuir la prima en 12 meses
-    */
+    double primaMensual = this.calcularPrima();
+    System.out.println(String.format("%.2f", primaMensual / 12));
   }
 }

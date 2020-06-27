@@ -23,26 +23,26 @@ public class App
         IPoliza poliza = new Poliza();
         IPoliza poliza2 = new Poliza2();
         ICalculoPrimaPeru icalperu = new CalculoPrimaPeru();
-        icalperu.CalculoPrima(new ArrayList<Certificado>());
         
-        SeguroVehicular seguro = new SeguroVehicular("Toyota","Yaris");
-        seguro.cacularRiesgo();
-        seguro.calcularKilometrajeMaximo();
-        cliente.setCompraSeguro(seguro);
+        SeguroVehicular seguroVehicular = new SeguroVehicular(2015, 15000, "Toyota","Yaris");
+        seguroVehicular.cacularRiesgo();
+        seguroVehicular.calcularKilometrajeMaximo();
+        cliente.setCompraSeguro(seguroVehicular);
 
         //Dip
-        seguro.setCertificado(certificado);
-        seguro.setPoliza(poliza);
-        seguro.setPoliza(poliza2);
-        seguro.setPoliza(poliza2);
-        seguro.calcularPrima(icalperu);
+        seguroVehicular.setCertificado(certificado);
+        seguroVehicular.setPoliza(poliza);
+        seguroVehicular.setPoliza(poliza2);
+        seguroVehicular.setPoliza(poliza2);
+        seguroVehicular.calcularPrima();
+        seguroVehicular.distribucionMensualidadPrima(icalperu);
         
 
 
-        SeguroTarjeta seguro2 = new SeguroTarjeta("BCP");
-        seguro2.cacularRiesgo();
-        seguro2.calcularMontoMaximo();
-        cliente.setCompraSeguro(seguro2);
+        SeguroTarjeta seguroTarjeta = new SeguroTarjeta("BCP");
+        seguroTarjeta.cacularRiesgo();
+        seguroTarjeta.calcularMontoMaximo();
+        cliente.setCompraSeguro(seguroTarjeta);
         cliente.getListaSeguroCliente();
 
         
