@@ -11,7 +11,7 @@ public class SeguroVehicular extends Seguro implements ISeguroVehicular {
   }
 
   @Override
-  public void cacularRiesgo()   {
+  public void cacularRiesgo() {
 
       if (this.marca.equals("Toyota") && this.modelo.equals("Yaris")) {
           this.nivelRiesgo = "ALTO";
@@ -22,8 +22,7 @@ public class SeguroVehicular extends Seguro implements ISeguroVehicular {
   }
 
   @Override
-  public String getDetalleSeguro()    {
-
+  public String getDetalleSeguro() {
       return "Seg. Vehicular Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo;
   }
 
@@ -36,6 +35,6 @@ public class SeguroVehicular extends Seguro implements ISeguroVehicular {
   public void distribucionMensualidadPrima() {
     System.out.println("calculando la distribución en 12 meses...");
     double primaMensual = this.calcularPrima();
-    System.out.println(String.format("%.2f", primaMensual / 12));
+    System.out.println(String.format("%.2f", (primaMensual * 1.0) / 12));
   }
 }

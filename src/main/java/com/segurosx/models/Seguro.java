@@ -4,8 +4,7 @@ import java.util.Random;
 
 import com.segurosx.models.Dip.ICertificado;
 import com.segurosx.models.Dip.IPoliza;
-import com.segurosx.models.ICalculoPrima;
-import com.segurosx.models.CalculoPrimaPeru;
+import com.segurosx.models.CalculoPrima;
 
 public abstract class Seguro {
 
@@ -58,8 +57,10 @@ public abstract class Seguro {
     public abstract void distribucionMensualidadPrima();
 
     public Double calcularPrima() {
-      CalculoPrimaPeru calculoPrimaPeru = new CalculoPrimaPeru();
-      calculoPrimaPeru.CalculoPrima(new ArrayList<Certificado>(this.certificado));
-      return calculoPrimaPeru.getPrima();
+      CalculoPrima calculoPrima = new CalculoPrima();
+      ArrayList<Certificado> listaCertificados = new ArrayList();
+      listaCertificados.add(this.certificado);
+      calculoPrima.CalculoPrima(listaCertificados);
+      return calculoPrima.getPrima();
     }
 }

@@ -1,6 +1,6 @@
 package main.java.com.segurosx.models;
 
-public interface ICalculoPrimaPeru {
+public interface ICalculoPrima {
 
     public Double getPrima();
 
