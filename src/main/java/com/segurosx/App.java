@@ -17,12 +17,13 @@ public class App
         
         SeguroVehicular seguro = new SeguroVehicular("Toyota","Yaris");
         seguro.cacularRiesgo();
+        seguro.calcularKilometrajeMaximo();
         cliente.setCompraSeguro(seguro);
 
         SeguroTarjeta seguro2 = new SeguroTarjeta("BCP");
         seguro2.cacularRiesgo();
+        seguro2.calcularMontoMaximo();
         cliente.setCompraSeguro(seguro2);
-
         cliente.getListaSeguroCliente();
 
    }
