@@ -22,6 +22,8 @@ public class App
         ICertificado certificado = new Certificado();
         IPoliza poliza = new Poliza();
         IPoliza poliza2 = new Poliza2();
+        ICalculoPrimaPeru icalperu = new CalculoPrimaPeru();
+        icalperu.CalculoPrima(new ArrayList<Certificado>());
         
         SeguroVehicular seguro = new SeguroVehicular("Toyota","Yaris");
         seguro.cacularRiesgo();
@@ -32,6 +34,8 @@ public class App
         seguro.setCertificado(certificado);
         seguro.setPoliza(poliza);
         seguro.setPoliza(poliza2);
+        seguro.setPoliza(poliza2);
+        seguro.calcularPrima(icalperu);
         
 
 

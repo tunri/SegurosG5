@@ -54,4 +54,10 @@ public abstract class Seguro {
 
     public abstract void cacularRiesgo();
 
+    public Double calcularPrima(ICalculoPrimaPeru icalperu) {
+      Double prima = icalperu.getPrima();
+      return String.format("%.2f", prima / 12);
+    }
+
+
 }
