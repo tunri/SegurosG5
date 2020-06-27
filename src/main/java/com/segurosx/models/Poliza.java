@@ -1,6 +1,8 @@
 package com.segurosx.models;
 
-public class Poliza {
+import com.segurosx.models.Dip.IPoliza;
+
+public class Poliza implements IPoliza{
 
     private Integer numero;
 

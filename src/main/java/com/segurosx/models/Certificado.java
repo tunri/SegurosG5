@@ -1,6 +1,8 @@
 package com.segurosx.models;
 
-public class Certificado {
+import com.segurosx.models.Dip.ICertificado;
+
+public class Certificado implements ICertificado {
     
     private Integer numero;
 
